@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F3188713-76EB-5471-DDDC-6A046E452E6E" name="RESERVE">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 12:57:15 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="reserve_datetime" id="B90D5D2F-8082-CC9B-364E-3BDF4B79CD64">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 13:16:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[reserve date time]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="book_copy_id" id="1F3D1B94-F9BF-8263-B76A-FAEBAED3AC6E">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 12:59:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[book copy ID]]></commentInRDBMS>
+<generatorID>C7FF9F70-7019-A403-7E00-54ABCCAA64C8</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<referedAttribute>533323A0-D7D4-F2F9-DCD5-B9C5643861F8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="branch_code" id="22AC348A-2F91-7975-5F77-FBDDD8FCC6CC">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 12:59:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique branch identifier across all branches in all LGA's]]></commentInRDBMS>
+<generatorID>C7FF9F70-7019-A403-7E00-54ABCCAA64C8</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<referedAttribute>09CC9EA9-CEB6-D9D0-4ED7-F59C07E63007</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_no" id="23E1FACE-255B-271A-BC30-593B5AE422EF">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 13:03:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[borrower id]]></commentInRDBMS>
+<generatorID>BAEF569F-7D32-D164-4E9D-05964352EF8F</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<referedAttribute>72C57A92-9ABA-FE5B-A884-5AF02A853117</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5094D0E7-F370-204A-21B5-5B6546CA2CA9" name="RESERVE PK">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 12:59:29 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1F3D1B94-F9BF-8263-B76A-FAEBAED3AC6E</attributeRef>
+<attributeRef>22AC348A-2F91-7975-5F77-FBDDD8FCC6CC</attributeRef>
+<attributeRef>B90D5D2F-8082-CC9B-364E-3BDF4B79CD64</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

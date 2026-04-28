@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="91345ABF-64F1-6756-D4DC-25D9F2E5BDAD" name="LOAN">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>363C424C-7D88-7C27-330C-20BEB34878D1</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="loan_out_time" id="85815EE9-0B58-029F-BD89-49CCD85994C9">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[loan out time]]></commentInRDBMS>
+<generatorID>925D8B5F-6607-2E7D-9E60-7E6286FA7527</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="book_copy_id" id="050E47D3-8CBE-52B2-17E7-A6D925B88E96">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[book copy ID]]></commentInRDBMS>
+<generatorID>6255BC77-89E8-7213-B871-246F51D45CFD</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C2A3F24-D51F-7B2C-8DD6-DC3080418486" referredColumn="E9D1BDCC-2428-44BB-A5C9-3817FC931F77"/>
+</associations>
+</Column>
+<Column name="branch_code" id="F09A301C-4AD7-50BB-114D-EFBDFF1B7136">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique branch identifier across all branches in all LGA's]]></commentInRDBMS>
+<generatorID>61EAA747-8A22-2499-A8ED-10BE5B9E50C0</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C2A3F24-D51F-7B2C-8DD6-DC3080418486" referredColumn="41B4111F-985C-FEB3-53BB-D07D8FA457C7"/>
+</associations>
+</Column>
+<Column name="loan_due_datetime" id="BBD0F938-4F46-5A3B-906B-66E876C3ED82">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>B61CE49A-59F5-8565-23B5-1467F1C1C312</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="loan_return_datetime" id="83B05177-E0B8-6913-95AA-EB5A4A5893C4">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[loan datetime]]></commentInRDBMS>
+<generatorID>31E91573-1AC0-1236-E402-2B377FBB927E</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="loan_fine" id="E9981C88-51F3-A4AD-4C12-5917AFD956A3">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>B81677CB-4A18-B9C9-BC30-439701B1881E</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="loan_fine_paid_date" id="B4CCC4F2-88F8-372E-8FFB-9740F00F1DA2">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[book loan fine paid date by borrower]]></commentInRDBMS>
+<generatorID>EEB39166-1034-1D53-D181-87639657FF9D</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="borrower_no" id="45E8EFDB-E681-7327-A1C3-A9B6082179CB">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[borrower id]]></commentInRDBMS>
+<generatorID>D45C3651-AC00-C6AD-599A-472E4836B5AF</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A02628DD-12AA-8D01-5735-2C7088654B71" referredColumn="435A0C8A-ED79-2A8C-CCBA-A51179597F32"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="10B5ABE9-2B31-A82C-5098-DC36920C0321" name="LOAN_PK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>994648B4-2C0A-EE01-70C7-0F675D796DF4</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85815EE9-0B58-029F-BD89-49CCD85994C9"/>
+<colUsage columnID="050E47D3-8CBE-52B2-17E7-A6D925B88E96"/>
+<colUsage columnID="F09A301C-4AD7-50BB-114D-EFBDFF1B7136"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4C72F4C-5311-BD9E-F051-A1A49A367EE9" name="LOAN_BOOKCOPY_FK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>A0EA4A6B-73FA-4DDA-9884-18CB3244602B</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="050E47D3-8CBE-52B2-17E7-A6D925B88E96"/>
+<colUsage columnID="F09A301C-4AD7-50BB-114D-EFBDFF1B7136"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3123E67-8985-ED6A-2841-7B5ADB2F8023" name="LOAN_BORROWER_FK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>847328A7-6ADE-6B3B-CCD0-C44C53CBF459</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45E8EFDB-E681-7327-A1C3-A9B6082179CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

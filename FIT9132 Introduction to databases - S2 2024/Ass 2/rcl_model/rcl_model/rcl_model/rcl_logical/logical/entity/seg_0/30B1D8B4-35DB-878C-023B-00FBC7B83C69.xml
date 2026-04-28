@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="30B1D8B4-35DB-878C-023B-00FBC7B83C69" name="BORROWER">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:30:14 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="B8A2CF4D-4A82-4D6F-EEFB-11F6DC597F5A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="borrower_no" id="72C57A92-9ABA-FE5B-A884-5AF02A853117">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:30:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[borrower id]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="B8A2CF4D-4A82-4D6F-EEFB-11F6DC597F5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_fname" id="1ED9FB49-EC04-25F6-8231-72C17522A6B9">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:33:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[borrower first name]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="B8A2CF4D-4A82-4D6F-EEFB-11F6DC597F5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_lname" id="EA9EE990-4BFE-B0DB-C3AA-A887CBBA388B">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:33:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[borrower last name]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="B8A2CF4D-4A82-4D6F-EEFB-11F6DC597F5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_address" id="39A3C8BF-E1F4-1E34-1AAC-1B8195E9EA05">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:34:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[borrower address]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="B8A2CF4D-4A82-4D6F-EEFB-11F6DC597F5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_status" id="3E662936-5D41-C5B0-4711-1A95688CD921">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 12:37:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[borrower status (can be lost or stolen)]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="B8A2CF4D-4A82-4D6F-EEFB-11F6DC597F5A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_phone" id="09CD33C5-4DFD-E287-33DD-9ADF474BD33F">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 14:35:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[borrower phone number]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="B8A2CF4D-4A82-4D6F-EEFB-11F6DC597F5A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bc_code" id="CCF5DE5F-8766-8407-E449-19F94D31214F">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 12:00:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[borrower class ]]></commentInRDBMS>
+<generatorID>44A6AE50-2254-E3CD-AFFC-CA03BE10B2B2</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="B8A2CF4D-4A82-4D6F-EEFB-11F6DC597F5A" value="true"/>
+</engineerTo>
+<referedAttribute>DB354805-DE56-528A-D276-DE382601AC27</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="branch_code" id="17A6F1F5-433A-0F2D-A746-0DAB6AF47FCF">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 12:02:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique branch identifier across all branches in all LGA's]]></commentInRDBMS>
+<generatorID>7A94A568-ECCE-4602-FF04-480CCCFBF696</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="B8A2CF4D-4A82-4D6F-EEFB-11F6DC597F5A" value="true"/>
+</engineerTo>
+<referedAttribute>B7CCB1EC-C316-47F0-F5CA-51F8C717B70A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A0074E36-854F-D0B4-2B9C-0BCA2D3153C0" name="BORROWER PK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:31:42 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="B8A2CF4D-4A82-4D6F-EEFB-11F6DC597F5A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>72C57A92-9ABA-FE5B-A884-5AF02A853117</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

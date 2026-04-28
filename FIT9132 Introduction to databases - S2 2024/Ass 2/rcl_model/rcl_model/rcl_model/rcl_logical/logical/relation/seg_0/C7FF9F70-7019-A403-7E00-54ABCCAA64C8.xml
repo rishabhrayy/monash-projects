@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="BOOKCOPY_RESERVE" directorySegmentName="seg_0" id="C7FF9F70-7019-A403-7E00-54ABCCAA64C8">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 12:59:29 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<sourcePk>1B344D6E-4015-62B3-A6CD-22C612E5BF1E</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>being</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>35A5FB78-3F32-ABBB-329B-7470E77EFA6A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F3188713-76EB-5471-DDDC-6A046E452E6E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

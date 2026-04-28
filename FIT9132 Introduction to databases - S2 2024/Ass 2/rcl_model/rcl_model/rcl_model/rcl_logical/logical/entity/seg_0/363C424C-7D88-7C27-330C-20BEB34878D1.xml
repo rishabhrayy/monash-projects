@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="363C424C-7D88-7C27-330C-20BEB34878D1" name="LOAN">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:34:42 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="D9165FD5-3103-C738-EFBB-EA57080A5A0E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="loan_out_time" id="925D8B5F-6607-2E7D-9E60-7E6286FA7527">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 12:33:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[loan out time]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="D9165FD5-3103-C738-EFBB-EA57080A5A0E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="book_copy_id" id="6255BC77-89E8-7213-B871-246F51D45CFD">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 12:34:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[book copy ID]]></commentInRDBMS>
+<generatorID>A0EA4A6B-73FA-4DDA-9884-18CB3244602B</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="D9165FD5-3103-C738-EFBB-EA57080A5A0E" value="true"/>
+</engineerTo>
+<referedAttribute>533323A0-D7D4-F2F9-DCD5-B9C5643861F8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="branch_code" id="61EAA747-8A22-2499-A8ED-10BE5B9E50C0">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 12:34:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique branch identifier across all branches in all LGA's]]></commentInRDBMS>
+<generatorID>A0EA4A6B-73FA-4DDA-9884-18CB3244602B</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="D9165FD5-3103-C738-EFBB-EA57080A5A0E" value="true"/>
+</engineerTo>
+<referedAttribute>09CC9EA9-CEB6-D9D0-4ED7-F59C07E63007</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="loan_due_datetime" id="B61CE49A-59F5-8565-23B5-1467F1C1C312">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:37:40 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="D9165FD5-3103-C738-EFBB-EA57080A5A0E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="loan_return_datetime" id="31E91573-1AC0-1236-E402-2B377FBB927E">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:38:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[loan datetime]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="D9165FD5-3103-C738-EFBB-EA57080A5A0E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="loan_fine" id="B81677CB-4A18-B9C9-BC30-439701B1881E">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:38:38 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="D9165FD5-3103-C738-EFBB-EA57080A5A0E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="loan_fine_paid_date" id="EEB39166-1034-1D53-D181-87639657FF9D">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 11:40:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[book loan fine paid date by borrower]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="D9165FD5-3103-C738-EFBB-EA57080A5A0E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="borrower_no" id="D45C3651-AC00-C6AD-599A-472E4836B5AF">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 12:36:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[borrower id]]></commentInRDBMS>
+<generatorID>847328A7-6ADE-6B3B-CCD0-C44C53CBF459</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="D9165FD5-3103-C738-EFBB-EA57080A5A0E" value="true"/>
+</engineerTo>
+<referedAttribute>72C57A92-9ABA-FE5B-A884-5AF02A853117</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="994648B4-2C0A-EE01-70C7-0F675D796DF4" name="LOAN PK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:37:31 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D9165FD5-3103-C738-EFBB-EA57080A5A0E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>925D8B5F-6607-2E7D-9E60-7E6286FA7527</attributeRef>
+<attributeRef>6255BC77-89E8-7213-B871-246F51D45CFD</attributeRef>
+<attributeRef>61EAA747-8A22-2499-A8ED-10BE5B9E50C0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9FB7D6CC-BF34-110D-2EF7-5B5948AAC668" name="BOOKEDITION">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:44:49 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="B8A2CF4D-4A82-4D6F-EEFB-11F6DC597F5A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="booked_isbn" id="98C79A23-2D16-E770-BFA0-1BD4362D5484">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:44:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Book Edition ISBN]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="B8A2CF4D-4A82-4D6F-EEFB-11F6DC597F5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="booked_book_type" id="E6DA2FFE-813A-4DBC-43DB-F1BF5204678F">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:46:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[book edition type, should be harcover, loose leaf or papaerback etc. and within 3 words]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="B8A2CF4D-4A82-4D6F-EEFB-11F6DC597F5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cata_call_no" id="524CC6A8-2210-431C-435D-4D1EA7D076AA">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 12:46:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[call number of the catalogue, used to allow users to locate and access items in the collection]]></commentInRDBMS>
+<generatorID>59EC4C80-3EBA-7DBF-A3BD-19E1B7CB19D4</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="B8A2CF4D-4A82-4D6F-EEFB-11F6DC597F5A" value="true"/>
+</engineerTo>
+<referedAttribute>8CF2FB9C-75F5-9AD3-E6E0-EA6C8DD5DD5D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FAC5DA41-13F1-9EA5-92FB-3DA0EF7A6914" name="BOOKEDITION PK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:45:19 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="B8A2CF4D-4A82-4D6F-EEFB-11F6DC597F5A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>98C79A23-2D16-E770-BFA0-1BD4362D5484</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

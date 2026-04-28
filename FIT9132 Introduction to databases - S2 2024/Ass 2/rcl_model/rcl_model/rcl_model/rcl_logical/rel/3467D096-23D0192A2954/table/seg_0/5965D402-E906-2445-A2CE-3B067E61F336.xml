@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5965D402-E906-2445-A2CE-3B067E61F336" name="BRANCH">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<generatorID>0E1BE628-C0E6-8421-E24E-4B8C9BBCFD8E</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="branch_code" id="EFE2025E-C5DA-F04D-C08A-7FCB43A13B2B">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique branch identifier across all branches in all LGA's]]></commentInRDBMS>
+<generatorID>B7CCB1EC-C316-47F0-F5CA-51F8C717B70A</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="branch_name" id="08C5BE6B-CDCE-B25D-814F-0E13F221BE86">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Branch Name]]></commentInRDBMS>
+<generatorID>E9AAE82F-0290-8192-0CEA-00C9B062B47B</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="branch_address" id="5D5BF342-9376-D861-8AB0-2747F18AB658">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Branch Address]]></commentInRDBMS>
+<generatorID>B62B0ACA-C773-F191-2F6C-C38416EB63FA</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="branch_contact_number" id="3ECAF3D5-1975-8067-7022-F9D473D3D592">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[branch contact number]]></commentInRDBMS>
+<generatorID>DAC97B5B-FDC0-AFAB-E8C7-0B06B37BBE8E</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="manager_id" id="5A1330B0-E73B-C85E-8A68-B51B526EA96B">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Manager Identifier ]]></commentInRDBMS>
+<generatorID>F14308D5-817C-1E24-B677-2810803C9743</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6144857-A053-7DE6-26B7-1C69CEDEA1FC" referredColumn="3C93C6D4-9D91-F205-3FE8-A19057F1E613"/>
+</associations>
+</Column>
+<Column name="lga_code" id="920F7742-5841-EEA6-DFF1-78BB5919470E">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Code of Local Government Agencies]]></commentInRDBMS>
+<generatorID>293C3636-9043-D070-0018-F2B1FA70E970</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B49BBA11-BB15-1679-4E88-7B52AFB215A3" referredColumn="ED67DC13-B190-60E3-F333-5C440CAD73B1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD9E945A-EBE8-0478-81B8-E5A73339926D" name="BRANCH_PK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<generatorID>E5B7C648-2621-88F5-D5A4-184BAD2DD55B</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFE2025E-C5DA-F04D-C08A-7FCB43A13B2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59950DB8-96AD-33F6-7D7F-CD3A6B2E0A8F" name="BRANCH_LGA_FK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<generatorID>61F7A49A-D8EC-20A5-8C22-AF49D3F497BA</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="920F7742-5841-EEA6-DFF1-78BB5919470E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3105F89C-3A38-08BF-23D7-3EC1774F6212" name="BRANCH_MANAGER_FK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<generatorID>9C564A19-E947-F253-76DA-61808705AC40</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A1330B0-E73B-C85E-8A68-B51B526EA96B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

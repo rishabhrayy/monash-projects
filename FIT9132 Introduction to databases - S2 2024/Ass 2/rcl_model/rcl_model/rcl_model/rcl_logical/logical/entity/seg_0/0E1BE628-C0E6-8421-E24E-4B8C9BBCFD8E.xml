@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0E1BE628-C0E6-8421-E24E-4B8C9BBCFD8E" name="BRANCH">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:26:06 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="branch_code" id="B7CCB1EC-C316-47F0-F5CA-51F8C717B70A">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:26:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique branch identifier across all branches in all LGA's]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="branch_name" id="E9AAE82F-0290-8192-0CEA-00C9B062B47B">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:26:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Branch Name]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="branch_address" id="B62B0ACA-C773-F191-2F6C-C38416EB63FA">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:27:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Branch Address]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="branch_contact_number" id="DAC97B5B-FDC0-AFAB-E8C7-0B06B37BBE8E">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:28:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[branch contact number]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="manager_id" id="F14308D5-817C-1E24-B677-2810803C9743">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 09:07:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Manager Identifier ]]></commentInRDBMS>
+<generatorID>9C564A19-E947-F253-76DA-61808705AC40</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<referedAttribute>482DCA12-275E-44DA-8D62-C1D47E5FC57E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lga_code" id="293C3636-9043-D070-0018-F2B1FA70E970">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 09:29:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Code of Local Government Agencies]]></commentInRDBMS>
+<generatorID>61F7A49A-D8EC-20A5-8C22-AF49D3F497BA</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<referedAttribute>9D93995F-AE58-3E12-AC64-E4C1F33DFC48</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E5B7C648-2621-88F5-D5A4-184BAD2DD55B" name="BRANCH PK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:26:32 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B7CCB1EC-C316-47F0-F5CA-51F8C717B70A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

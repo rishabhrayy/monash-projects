@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AAB7BE6E-A3D1-4A41-16E0-EA521E2E7ACA" name="CATALOGUE">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>76EB6F47-077F-58EA-CB66-BAA178D8B0C3</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cata_call_no" id="E0D2448D-764D-2563-66BC-1A394D85B56C">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[call no of cata]]></commentInRDBMS>
+<generatorID>8CF2FB9C-75F5-9AD3-E6E0-EA6C8DD5DD5D</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cata_title" id="C18F5373-DE96-1AF1-2005-C1308F5F99B4">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[title of the catalogue]]></commentInRDBMS>
+<generatorID>8AEC4F0E-B76A-81A6-8D43-5D33971F7895</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cata_content" id="0DA63351-2519-86FA-5001-D97C43CB7EE3">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>57B96F84-E66A-16AF-4A73-E47A7525E44D</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cata_pub_year" id="93D87A28-95DB-922B-8635-B98BB6D46D03">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[catalouge entry publication year]]></commentInRDBMS>
+<generatorID>87C5EF26-6161-B0BC-AE9D-DCEA8FAA3CE1</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cata_classification" id="5757995B-7848-4BD3-F249-1E0997B8B318">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[as reference, classification of catalouge]]></commentInRDBMS>
+<generatorID>475EC130-CCFF-9BD3-EE69-7593C4621667</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cata_pages" id="52D223D6-A69B-B13E-AD3D-CFDC08D0140B">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>5D0263DD-EAC0-1B40-2952-965A91270A81</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cata_readinglevel" id="532C8FB0-EDB8-EC00-2EAD-4A12652AE261">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[catalogue reading level]]></commentInRDBMS>
+<generatorID>E6816659-AED8-7819-60D2-C9AC899EABB7</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cata_language" id="9C4AB846-543F-3EA3-4D5D-F0BD61DCD105">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[catalouge language]]></commentInRDBMS>
+<generatorID>F3A34C52-173D-BA37-46A2-FDEBA30B0BD1</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cata_edition" id="5BD591B7-71CF-8D16-9C05-BD505700E1FA">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[catalouge edition]]></commentInRDBMS>
+<generatorID>8BD7B158-C147-CCA8-E7B2-AD33F25668CC</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cata_note" id="BCA2BC29-65BF-EFDF-C4A8-E48BF741E801">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>D617F5FD-18B5-766C-27F4-65C3EBAC3283</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pub_id" id="399D1BF7-5006-BCE5-0922-7DCAC8DFE873">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[publisher id, library assign unique in house numerical code]]></commentInRDBMS>
+<generatorID>66DF538B-8539-BCBF-553E-7E92FA83DBBE</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06EE0FF1-AA23-9EBE-01D7-BC333AA1F6EC" referredColumn="D56254F1-8367-2C28-C576-C822A597D8A6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FD18667B-7D18-4C4E-F26C-8410BE92A670" name="CATALOGUE_PK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>EEC779E5-25F5-D0B7-EC3F-D399443324D2</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0D2448D-764D-2563-66BC-1A394D85B56C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A977E5C3-4E77-8112-D110-DAD0FCB52B31" name="CATALOGUE_PUBLISHER_FK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>19A0C5FE-A4FD-92C6-FD01-2862F8ECADBD</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="399D1BF7-5006-BCE5-0922-7DCAC8DFE873"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,162 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6DE256A5-C2CC-A2E7-AEAA-D8F46E4FB0AA" name="BORROWER">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<generatorID>30B1D8B4-35DB-878C-023B-00FBC7B83C69</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="borrower_no" id="1E01FA1C-8C2A-8FD2-4B56-AD51D5FF83D9">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[borrower id]]></commentInRDBMS>
+<generatorID>72C57A92-9ABA-FE5B-A884-5AF02A853117</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="borrower_fname" id="9BE47801-5809-6E71-0A64-A50E7EA4AE18">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[borrower first name]]></commentInRDBMS>
+<generatorID>1ED9FB49-EC04-25F6-8231-72C17522A6B9</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="borrower_lname" id="00CE3B53-28BB-C2FA-68F5-EC9989D115CF">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[borrower last name]]></commentInRDBMS>
+<generatorID>EA9EE990-4BFE-B0DB-C3AA-A887CBBA388B</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="borrower_address" id="42E8B36B-63DE-587F-D6D6-31C60901BDB0">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[borrower address]]></commentInRDBMS>
+<generatorID>39A3C8BF-E1F4-1E34-1AAC-1B8195E9EA05</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="borrower_status" id="B0BF8AF8-DF8D-482D-60AC-BCE4618E26B9">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[borrower status (can be lost or stolen)]]></commentInRDBMS>
+<generatorID>3E662936-5D41-C5B0-4711-1A95688CD921</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="borrower_phone" id="3BAD4818-A386-F82B-2850-677C6EB425D7">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[borrower phone number]]></commentInRDBMS>
+<generatorID>09CD33C5-4DFD-E287-33DD-9ADF474BD33F</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bc_code" id="6C1180EE-1177-D82C-C282-02CC81AC7211">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[borrower class ]]></commentInRDBMS>
+<generatorID>CCF5DE5F-8766-8407-E449-19F94D31214F</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA9B057B-55AB-F9F1-CB1A-67052C7D2105" referredColumn="F45B991A-C7F1-15A6-0E4B-64FD5A295590"/>
+</associations>
+</Column>
+<Column name="branch_code" id="1699C558-C9C6-64D6-08CB-8EF48DA15805">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique branch identifier across all branches in all LGA's]]></commentInRDBMS>
+<generatorID>17A6F1F5-433A-0F2D-A746-0DAB6AF47FCF</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C1DA4DA3-F309-ADD9-3A77-F4CAF3C88CCD" referredColumn="EFE2025E-C5DA-F04D-C08A-7FCB43A13B2B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="024EA133-445F-0240-736E-DD9C6988A379" name="BORROWER_PK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<generatorID>A0074E36-854F-D0B4-2B9C-0BCA2D3153C0</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E01FA1C-8C2A-8FD2-4B56-AD51D5FF83D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C7133EE-F615-5A08-F5F7-9E523E967BDD" name="BORROWER_BRANCH_FK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<generatorID>7A94A568-ECCE-4602-FF04-480CCCFBF696</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1699C558-C9C6-64D6-08CB-8EF48DA15805"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71EB06F2-5BC7-6975-F5D5-E7F6617F71BF" name="BORROWER_BORROWERCLASS_FK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<generatorID>44A6AE50-2254-E3CD-AFFC-CA03BE10B2B2</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C1180EE-1177-D82C-C282-02CC81AC7211"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

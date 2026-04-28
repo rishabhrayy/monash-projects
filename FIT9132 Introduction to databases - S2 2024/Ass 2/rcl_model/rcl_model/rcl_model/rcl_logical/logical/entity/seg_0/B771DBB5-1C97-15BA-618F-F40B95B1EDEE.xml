@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B771DBB5-1C97-15BA-618F-F40B95B1EDEE" name="LGA">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 08:22:39 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lga_code" id="9D93995F-AE58-3E12-AC64-E4C1F33DFC48">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 08:23:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Code of Local Government Agencies]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lga_name" id="CE39CF78-798C-92D1-BB54-7E372B150E46">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 08:34:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Name of Local Government Agencies]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lga_size" id="B0DB0D21-B08E-EDB0-6C91-D192C6607725">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 08:35:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Local Government Agencies Size in hectares]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,8,3</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lga_contact_name" id="BB4A789C-C816-9794-EDC6-99E8A8B7B77D">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 08:46:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[ contact name of Local Government Agencies  ]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lga_contact_phone" id="AB70BAC4-DEF0-8263-A4C0-060C6CEE8E39">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 08:48:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contact phone number of the LGA]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="07D7B55B-7266-D241-1352-1D6823DB7FA2" name="LGA PK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 08:30:42 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9D93995F-AE58-3E12-AC64-E4C1F33DFC48</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

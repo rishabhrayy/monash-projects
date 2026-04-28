@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="35D573A6-E13C-DBB4-0FFF-742AC632DE98" containerWithKeyObject="10C39E52-B52F-E53F-2D89-78D5E530C31F" localFKIndex="01966DCE-2E80-DDCA-55BA-7D391F98F1C8" name="CATALOGUE_AUTHOR_CATALOGUE_FK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<generatorID>DA62D876-4F4A-1DC8-7E51-FE7F3828994D</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<referredTableLongName>CATALOGUE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0C07FE0A-79F7-0E8B-F47F-C272B2619AF5</referredTableID>
+<keyObject>B3338446-9F1E-5CB5-3B19-746E25F6B0A6</keyObject>
+<referredKeyID>B3338446-9F1E-5CB5-3B19-746E25F6B0A6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cata_call_no</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

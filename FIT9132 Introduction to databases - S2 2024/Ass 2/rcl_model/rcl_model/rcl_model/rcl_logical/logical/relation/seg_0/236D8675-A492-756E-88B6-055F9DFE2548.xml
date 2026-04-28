@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="AUTH_CATA_AUTH" directorySegmentName="seg_0" id="236D8675-A492-756E-88B6-055F9DFE2548">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 11:13:56 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<sourcePk>6DA525DE-0C0D-52AF-2E97-E903256E4C51</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>writes</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>74C1CFA0-8AAC-DC92-7D6A-96BD98B67F0C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D0022106-2582-BEE5-DA67-491FA8E2E4ED</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

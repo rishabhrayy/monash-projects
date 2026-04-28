@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6B6D28FB-12F7-5AE1-E1EE-58C1C00318AF" name="PUBLISHER">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-16 09:07:47 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+<item key="D9165FD5-3103-C738-EFBB-EA57080A5A0E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pub_id" id="6F4334D2-8731-61CE-A5C9-B030E64828F5">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-16 09:08:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[publisher id, library assign unique in house numerical code]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+<item key="D9165FD5-3103-C738-EFBB-EA57080A5A0E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pub_name" id="E4C63FF6-4766-B38F-EB52-40F6DEDE17C4">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-16 09:08:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[publisher's name]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+<item key="D9165FD5-3103-C738-EFBB-EA57080A5A0E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pub_des_content" id="0CE063A0-C4C1-93BD-3601-47D4247496A7">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-16 09:08:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[publisher description content]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+<item key="D9165FD5-3103-C738-EFBB-EA57080A5A0E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pub_year" id="476F1DC5-A459-2D4A-DC60-C5B74A331A16">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 14:52:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[publication year]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="true"/>
+<item key="D9165FD5-3103-C738-EFBB-EA57080A5A0E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DB3FCB90-219B-B315-9F8E-8E64EAA9BBC3" name="PUBLISHER PK">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-16 09:09:45 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="C52315FC-0733-E313-03AC-E59D3E727B97" value="false"/>
+<item key="D9165FD5-3103-C738-EFBB-EA57080A5A0E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6F4334D2-8731-61CE-A5C9-B030E64828F5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C85E302A-02C4-8B1F-E3CB-A9889A9B7893" name="SUBJECT">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<generatorID>ECF80AF4-850C-30A6-4C77-E367B6074E34</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sub_id" id="185FEB90-94B3-5B07-DC92-277B53FDCE20">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<generatorID>1069D3C2-C434-16E9-F40A-7BC992827DEE</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sub_desc" id="F6193632-C6E8-6DEF-1806-B968CFCB67F1">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[subject description]]></commentInRDBMS>
+<generatorID>722F582F-AAFE-16FA-F519-663C304FDE1C</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cata_sub_id" id="9DE556A8-79A5-684F-D8D3-D97076FEA4AE">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key of cata_sub]]></commentInRDBMS>
+<generatorID>AD6D0559-4FCD-B1D4-AE42-C93356DD1A4D</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E930736B-DEAB-69AC-04F6-1B889BDD20F8" referredColumn="48498D77-CF99-65D0-D422-92424128DC1E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB94C644-2761-48FE-71AB-C52DA289AAD4" name="SUBJECT_PK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<generatorID>5A3A8054-0D73-4E99-7319-646DEC73CF63</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="185FEB90-94B3-5B07-DC92-277B53FDCE20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F40CDC90-856C-F940-7339-D2990FCF9993" name="SUBJECT__IDX">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>2E6B429B-DF3B-70BA-3871-A84730073A42</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="9DE556A8-79A5-684F-D8D3-D97076FEA4AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0DFAC115-4E81-D80C-0183-0B220E0F01B9" name="SUBJECT_CATALOGUE_SUBJECT_FK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<generatorID>2E6B429B-DF3B-70BA-3871-A84730073A42</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DE556A8-79A5-684F-D8D3-D97076FEA4AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

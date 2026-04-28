@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2AA6BD21-1BF9-6EE7-011B-9087D68B9BDF" containerWithKeyObject="A75B70CF-15E8-EF4E-677C-BFC1D95B9185" localFKIndex="F5CEF8EA-8FB0-803F-77C8-C2BA47139D69" name="BRANCH_LGA_FK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>61F7A49A-D8EC-20A5-8C22-AF49D3F497BA</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<referredTableLongName>LGA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D62B3839-FC50-FBA7-71E6-35367677C689</referredTableID>
+<keyObject>31051A25-B76A-AC7E-40A0-15E956D61193</keyObject>
+<referredKeyID>31051A25-B76A-AC7E-40A0-15E956D61193</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>lga_code</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

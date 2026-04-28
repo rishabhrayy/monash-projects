@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D756C0D8-797F-2B73-7B8D-753B67F142B6" name="BOOKEDITION">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<generatorID>9FB7D6CC-BF34-110D-2EF7-5B5948AAC668</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="booked_isbn" id="7C57525C-E2EF-BE4C-A7C6-7CDB0E1225A0">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Book Edition ISBN]]></commentInRDBMS>
+<generatorID>98C79A23-2D16-E770-BFA0-1BD4362D5484</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="booked_book_type" id="1866691D-1ECB-41F4-BEA1-CF1CE09F638D">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[book edition type, should be harcover, loose leaf or papaerback etc. and within 3 words]]></commentInRDBMS>
+<generatorID>E6DA2FFE-813A-4DBC-43DB-F1BF5204678F</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cata_call_no" id="E331D515-0A89-D1F5-1677-C7D927E78F45">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[call no of cata]]></commentInRDBMS>
+<generatorID>524CC6A8-2210-431C-435D-4D1EA7D076AA</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="93F491B4-46A0-3EDB-AF91-4F8DDFE23A2B" referredColumn="66EDE1A9-88AD-7F2E-7F49-EBCB8438F418"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9BC6526B-C764-A3D3-5991-01E55797D609" name="BOOKEDITION_PK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<generatorID>FAC5DA41-13F1-9EA5-92FB-3DA0EF7A6914</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C57525C-E2EF-BE4C-A7C6-7CDB0E1225A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8B95B53-FD8B-EFBE-08B1-971D7AE082E8" name="BOOKEDITION_CATALOGUE_FK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:36:15 UTC</createdTime>
+<generatorID>59EC4C80-3EBA-7DBF-A3BD-19E1B7CB19D4</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E331D515-0A89-D1F5-1677-C7D927E78F45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

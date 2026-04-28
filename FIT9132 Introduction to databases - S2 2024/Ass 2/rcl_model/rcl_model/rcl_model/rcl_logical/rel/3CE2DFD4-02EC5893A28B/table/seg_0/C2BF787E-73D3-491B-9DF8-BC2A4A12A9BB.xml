@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C2BF787E-73D3-491B-9DF8-BC2A4A12A9BB" name="BOOKCOPY">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>35A5FB78-3F32-ABBB-329B-7470E77EFA6A</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="book_copy_id" id="E9D1BDCC-2428-44BB-A5C9-3817FC931F77">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[book copy ID]]></commentInRDBMS>
+<generatorID>533323A0-D7D4-F2F9-DCD5-B9C5643861F8</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="branch_code" id="41B4111F-985C-FEB3-53BB-D07D8FA457C7">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique branch identifier across all branches in all LGA's]]></commentInRDBMS>
+<generatorID>09CC9EA9-CEB6-D9D0-4ED7-F59C07E63007</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7A9C70D-8825-0E87-3755-CF7FD3967EA8" referredColumn="D9B3A86C-C280-5B65-99BB-65052B47E66F"/>
+</associations>
+</Column>
+<Column name="book_copy_pur_price" id="780C012F-119D-F37F-85CF-7371FDC9BCC6">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[book copy price]]></commentInRDBMS>
+<generatorID>D8674B97-5EA3-9AEA-4679-EFEE85625A66</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="book_copy_counter_reserve" id="3E4AA90C-5C6A-422F-C039-647B9D2F2EC1">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[A flag is added to a book copy to indicate whether it is on counter
+ reserve or not.]]></commentInRDBMS>
+<generatorID>E1668203-4C07-6935-BD84-F64D2AD4FA23</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="booked_isbn" id="A50275DE-F6E9-4756-7F0D-6ED6F1102E59">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Book Edition ISBN]]></commentInRDBMS>
+<generatorID>AE83A812-446F-DC15-CD24-C66F56D5A076</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B321925-B25A-5878-42DD-8709B5B049B8" referredColumn="30254AB8-AA7C-CEDA-792A-51A44958D50D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA5D6BCE-CC41-C7DC-6BB5-D7361E00CDA6" name="BOOKCOPY_PK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>1B344D6E-4015-62B3-A6CD-22C612E5BF1E</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9D1BDCC-2428-44BB-A5C9-3817FC931F77"/>
+<colUsage columnID="41B4111F-985C-FEB3-53BB-D07D8FA457C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11753AD8-5D6C-AED1-6CC8-40567343CB56" name="BOOKCOPY_BOOKEDITION_FK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>62D7A3AA-2690-8ABA-5706-C6F9A0D1CBBF</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A50275DE-F6E9-4756-7F0D-6ED6F1102E59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D286D48C-AF66-D0DC-922A-09D6188C4E0F" name="BOOKCOPY_BRANCH_FK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>7F98F350-D4F1-7DC6-6EA0-3B0DABFFB862</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41B4111F-985C-FEB3-53BB-D07D8FA457C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

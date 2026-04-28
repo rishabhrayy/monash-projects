@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="06EE0FF1-AA23-9EBE-01D7-BC333AA1F6EC" containerWithKeyObject="AAB7BE6E-A3D1-4A41-16E0-EA521E2E7ACA" localFKIndex="A977E5C3-4E77-8112-D110-DAD0FCB52B31" name="CATALOGUE_PUBLISHER_FK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-18 05:37:06 UTC</createdTime>
+<generatorID>19A0C5FE-A4FD-92C6-FD01-2862F8ECADBD</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<referredTableLongName>PUBLISHER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8F08840C-B32D-E34A-3DCC-ED3716D07EBA</referredTableID>
+<keyObject>5CCE1256-B298-DBF8-B6E4-3FE16D07486E</keyObject>
+<referredKeyID>5CCE1256-B298-DBF8-B6E4-3FE16D07486E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>pub_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="900FE8E0-2A0A-4369-8535-1584C558748F" name="CATALOGUE_SUBJECT">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 16:31:05 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cata_sub_id" id="4E469A7C-940B-7C2A-FF8F-9A3B27838A9D">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 16:34:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key of cata_sub]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cata_call_no" id="CAF8A236-265E-0BA7-2EE6-EA87A675D4CE">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 16:31:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[call no of cata]]></commentInRDBMS>
+<generatorID>514EFE67-0358-A43D-13C4-714EE1DF59D9</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<referedAttribute>8CF2FB9C-75F5-9AD3-E6E0-EA6C8DD5DD5D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sub_id" id="AC74A0FF-94CA-E4A2-F403-070BA6B1B3C0">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 16:32:45 UTC</createdTime>
+<generatorID>2E6B429B-DF3B-70BA-3871-A84730073A42</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<referedAttribute>1069D3C2-C434-16E9-F40A-7BC992827DEE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7359D3B4-9884-2345-6E63-92F45C495046" name="CATA_SUB PK">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 16:31:40 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>4E469A7C-940B-7C2A-FF8F-9A3B27838A9D</newElementsIDs>
+<usedAttributes>
+<attributeRef>4E469A7C-940B-7C2A-FF8F-9A3B27838A9D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="07810450-A903-7E76-F416-FA784D1F6775" name="CATA_SUB UK">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 16:34:57 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<newElementsIDs>AC74A0FF-94CA-E4A2-F403-070BA6B1B3C0,CAF8A236-265E-0BA7-2EE6-EA87A675D4CE</newElementsIDs>
+<usedAttributes>
+<attributeRef>AC74A0FF-94CA-E4A2-F403-070BA6B1B3C0</attributeRef>
+<attributeRef>CAF8A236-265E-0BA7-2EE6-EA87A675D4CE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

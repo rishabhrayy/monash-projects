@@ -1,0 +1,186 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="76EB6F47-077F-58EA-CB66-BAA178D8B0C3" name="CATALOGUE">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:47:46 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cata_call_no" id="8CF2FB9C-75F5-9AD3-E6E0-EA6C8DD5DD5D">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:47:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[call no of cata]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cata_title" id="8AEC4F0E-B76A-81A6-8D43-5D33971F7895">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:48:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[title of the catalogue]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cata_content" id="57B96F84-E66A-16AF-4A73-E47A7525E44D">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:49:06 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cata_pub_year" id="87C5EF26-6161-B0BC-AE9D-DCEA8FAA3CE1">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:49:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[catalouge entry publication year]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cata_classification" id="475EC130-CCFF-9BD3-EE69-7593C4621667">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:51:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[as reference, classification of catalouge]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cata_pages" id="5D0263DD-EAC0-1B40-2952-965A91270A81">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:52:21 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cata_readinglevel" id="E6816659-AED8-7819-60D2-C9AC899EABB7">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 15:31:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[catalogue reading level]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cata_language" id="F3A34C52-173D-BA37-46A2-FDEBA30B0BD1">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:53:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[catalouge language]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cata_edition" id="8BD7B158-C147-CCA8-E7B2-AD33F25668CC">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:53:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[catalouge edition]]></commentInRDBMS>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cata_note" id="D617F5FD-18B5-766C-27F4-65C3EBAC3283">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:54:38 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pub_id" id="66DF538B-8539-BCBF-553E-7E92FA83DBBE">
+<createdBy>mac</createdBy>
+<createdTime>2024-09-17 12:55:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[publisher id, library assign unique in house numerical code]]></commentInRDBMS>
+<generatorID>19A0C5FE-A4FD-92C6-FD01-2862F8ECADBD</generatorID>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<referedAttribute>6F4334D2-8731-61CE-A5C9-B030E64828F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EEC779E5-25F5-D0B7-EC3F-D399443324D2" name="CATALOGUE_ENTRY PK">
+<createdBy>acer</createdBy>
+<createdTime>2024-09-16 09:48:03 UTC</createdTime>
+<ownerDesignName>rcl_logical</ownerDesignName>
+<engineerTo>
+<item key="4C707698-1E52-49DF-8F99-A51E6DEC1DB9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8CF2FB9C-75F5-9AD3-E6E0-EA6C8DD5DD5D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
